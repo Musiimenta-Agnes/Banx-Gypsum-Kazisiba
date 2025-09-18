@@ -1,0 +1,35 @@
+.footer {
+    
+  width: 100%;
+  color: white;
+  background-color: #1F3C88;
+   width: 100%;
+   padding: 10px 10px;
+   height: 100%; 
+  
+
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+    display: inline-block;
+
+}
+
+.ul-links {
+    list-style: none;
+}
+
+.icon{
+  padding: 10px 10px;
+    transition: transform 0.3s ease; 
+    display: inline-block; 
+
+}
+
+.footer-links:hover {
+     transform: scale(1.0);
+   color:orange;
+}

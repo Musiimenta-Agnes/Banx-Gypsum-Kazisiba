@@ -1,0 +1,56 @@
+
+/* Force Inter everywhere */
+body {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px; /* adjust to match local look */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure Bootstrap and other CSS don’t override */
+*,
+*::before,
+*::after {
+  font-family: inherit !important;
+}
+
+
+
+
+
+
+.container-fluid {
+  font-family: 'Times New Roman';
+}
+
+
+
+
+.words {
+
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 40px;
+    font-family: Times New Roman;
+    background-color: #FDF5F5;
+
+}
+
+.word {
+  width: 100%;
+}
+
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}

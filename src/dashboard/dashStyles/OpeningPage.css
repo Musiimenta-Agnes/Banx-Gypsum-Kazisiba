@@ -1,0 +1,88 @@
+
+
+.card1 {
+ box-shadow:
+ 0 6px 10px white,   /* bottom shadow */
+ 0 -4px 6px white,   /* top shadow */
+ 4px 0 6px white,     /* right shadow */
+ -4px 0 6px white;    /* left shadow */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: 1px solid blue;
+ 
+  
+}
+.card1:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 20px rgb(241, 241, 244),
+    0 -6px 10px rgb(241, 241, 244),
+    6px 0 12px rgb(241, 241, 244),
+    -6px 0 12px rgb(241, 241, 244);
+}
+
+
+  .badge {
+    background-color: orangered;
+  }
+
+  .body {
+    background-color: #F3FEFF;
+    margin-left: 0px;
+  }
+    
+
+
+
+  /* Cards container */
+  .row.g-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center horizontally */
+    gap: 15px; /* space between cards */
+  }
+  
+  /* Individual cards */
+  .cards {
+    flex: 1 1 220px; /* flexible width, minimum 220px */
+    max-width: 250px; /* prevent cards from growing too wide */
+  }
+  
+  .card1 {
+    padding: 4px; /* reduce padding inside card */
+    min-height: 90px; /* smaller fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Card titles and buttons */
+  .card1 .card-title {
+    font-size: 0.9rem; /* smaller font to prevent height increase */
+  
+  }
+  
+  .card1 .btn {
+    font-size: 0.75rem; /* smaller button text */
+    padding: 3px 3px; /* smaller padding */
+  }
+  
+  .card1 .badge {
+    font-size: 0.7rem;
+    margin-left: 3px;
+  }
+  
+  /* Responsive: keep cards in one line on medium screens */
+  @media (max-width: 768px) {
+    .cards {
+      flex: 1 1 45%; /* two cards per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards {
+      flex: 1 1 100%; /* full width on small screens */
+    }
+  }
+  
