@@ -62,7 +62,7 @@
 nav li {
     float: left;
     list-style: none;
-    padding: 20px 30px; 
+    padding: 20px 24px; 
 }
 
 
@@ -185,4 +185,35 @@ nav li {
   background-color: rgb(10, 10, 87);
   color: white;
   width: 100%;
+}
+
+
+
+/* Default link color */
+.navbar .nav-link {
+  color: white !important; /* make all nav links white */
+}
+
+/* When hovered */
+.navbar .nav-link:hover {
+  color: lightblue !important; /* pick a hover color */
+}
+
+/* When active (clicked or current route) */
+.navbar .nav-link.active,
+.navbar .nav-link:focus {
+  color: orange !important; /* choose a highlight color */
+}
+
+
+/* Default dropdown link style */
+.dropdown-menu .dropdown-item {
+  color: white !important;  /* stay white by default */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* On hover -> black text */
+.dropdown-menu .dropdown-item:hover {
+  color: black !important;
+  background-color: #f8f9fa !important; /* optional: light background on hover */
 }

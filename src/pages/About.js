@@ -7,7 +7,7 @@ import '../styles/About.css';
 function AboutUs() {
   return (
     <div className="about-us-container" style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 className="about-title">About Banx Gypsum Kazisiba</h1>
+      {/* <h1 className="about-title">About</h1> */}
 
       {/* Row 1 */}
       <div className="about-row">
@@ -17,12 +17,15 @@ function AboutUs() {
         <div className="about-text" data-aos="fade-up">
           <h2>Professional Gypsum Services</h2>
 <p>
-  Banx Gypsum specializes in construction, interior finishing,
-   and customized design solutions using high-quality gypsum products.
-    With years of hands-on experience, we provide exceptional services
+     Banx Gypsum specializes in construction, interior finishing,
+      and customized design solutions using high-quality gypsum products.
+     With years of hands-on experience, we provide exceptional services
      that include elegant ceiling installations, stylish wall partitions,
       decorative moldings, and bespoke interior designs. Our team works
-       closely with clients to understand their vision and transform spaces into functional, aesthetically pleasing environments. Whether it is a residential home, commercial office, or industrial facility, we ensure that every project is completed with precision, durability, and attention to detail, reflecting our commitment to excellence and customer satisfaction.
+       closely with clients to understand their vision and transform spaces 
+       into functional, aesthetically pleasing environments. Whether it is a residential home,
+        commercial office, or industrial facility, we ensure that every project is completed with 
+        precision, durability, and attention to detail, reflecting our commitment to excellence and customer satisfaction.
 </p>
 
         </div>

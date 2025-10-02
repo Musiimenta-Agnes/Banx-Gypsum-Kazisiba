@@ -1,0 +1,51 @@
+.projects-vertical-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f3c88;
+  margin-bottom: 20px;
+}
+
+.projects-vertical-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ center alignment */
+  gap: 25px; /* spacing between projects */
+}
+
+.project-card-vertical {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+  width: 90%; /* ✅ center narrower */
+  max-width: 900px; /* limit max width */
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card-vertical:hover {
+  transform: translateY(-5px);
+}
+
+.project-media {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+
+}
+
+.project-desc h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.project-desc p {
+  font-size: 1rem;
+  color: #555;
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../../styles/Products.css';
+import '../styles/Gallery.css';
 
 function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -13,7 +13,19 @@ function Gallery() {
     { id: 4, src: "/images/Image four.jfif", title: "Contemporary Bedroom" },
     { id: 5, src: "/images/futuristic-kitchen-interior-design.jpg", title: "Classic Kitchen Area" },
     { id: 6, src: "/images/Image three.jfif", title: "Stylish Outdoor Space" },
-    // 👉 You can fetch from backend here too later
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.25 AM (1).jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.27 AM.jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.26 AM.jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.27 AM.jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.48 AM (1).jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.48 AM.jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM (1).jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM.jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM (2).jpeg", title: "Stylish Outdoor Space" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.50 AM (1).jpeg", title: "Stylish Outdoor Space" },
+     { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.51 AM.jpeg", title: "Stylish Outdoor Space" },
+      { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.50 AM.jpeg", title: "Stylish Outdoor Space" }
+    //  You can fetch from backend here too later
   ];
 
   return (

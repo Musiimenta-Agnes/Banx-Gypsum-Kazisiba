@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../../styles/Stores.css';
+import '../styles/Projects.css';
 import 'aos/dist/aos.css';
 
 function Projects() {
@@ -17,10 +17,27 @@ function Projects() {
 
   return (
     <div className="projects-container">
-      <h1 className="projects-title">Our Projects</h1>
+      <h1 className="heading"> Completed Projects</h1>
+      <br/>
 
       <div className="projects-grid">
         {/* Row 1 - Images */}
+
+
+                <div className="project-card">
+          <video className="project-video" controls>
+            <source src="/images/Video 2.mp4" type="video/mp4" />
+          </video>
+          <div className="project-desc">
+            <h3>Project Title 7</h3>
+            <p>This is a short description of the project shown in the video.</p>
+          </div>
+        </div>
+
+
+
+
+
         <div className="project-card">
           <img src="/images/modern-kitchen-interior-design.jpg" alt="Project 1" className="project-img" />
           <div className="project-desc">
@@ -68,7 +85,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="project-card">
+        {/* <div className="project-card">
           <video className="project-video" controls>
             <source src="/images/Video 2.mp4" type="video/mp4" />
           </video>
@@ -76,7 +93,7 @@ function Projects() {
             <h3>Project Title 7</h3>
             <p>This is a short description of the project shown in the video.</p>
           </div>
-        </div>
+        </div> */}
 
         <div className="project-card">
           <img src="/images/futuristic-kitchen-interior-design.jpg" alt="Project 4" className="project-img" />
@@ -102,6 +119,7 @@ function Projects() {
           </div>
         </div>
 
+
         <div className="project-card">
           <video className="project-video" controls>
             <source src="/images/Video 4.mp4" type="video/mp4" />
@@ -110,7 +128,71 @@ function Projects() {
             <h3>Project Title 10</h3>
             <p>This is a short description of the project shown in the video.</p>
           </div>
+
         </div>
+
+
+
+
+            <div className="project-card">
+          <img src="/images/WhatsApp Image 2025-09-22 at 10.10.50 AM (1).jpeg" alt="Project 4" className="project-img" />
+          <div className="project-desc">
+            <h3>Project 9</h3>
+            <p>Description for project 6.</p>
+          </div>
+        </div>
+
+
+
+
+                   <div className="project-card">
+          <img src="/images/WhatsApp Image 2025-09-22 at 10.10.49 AM.jpeg" alt="Project 4" className="project-img" />
+          <div className="project-desc">
+            <h3>Project 9</h3>
+            <p>Description for project 6.</p>
+          </div>
+        </div>
+
+
+
+
+
+                   <div className="project-card">
+          <img src="/images/WhatsApp Image 2025-09-22 at 10.10.48 AM.jpeg" alt="Project 4" className="project-img" />
+          <div className="project-desc">
+            <h3>Project 9</h3>
+            <p>Description for project 6.</p>
+          </div>
+        </div>
+
+
+
+
+                <div className="project-card">
+          <video className="project-video" controls>
+            <source src="/images/WhatsApp Video 2025-09-22 at 10.10.34 AM.mp4" type="video/mp4" />
+          </video>
+          <div className="project-desc">
+            <h3>Project Title 10</h3>
+            <p>This is a short description of the project shown in the video.</p>
+          </div>
+
+        </div>
+
+
+
+              <div className="project-card">
+          <img src="/images/WhatsApp Image 2025-09-22 at 10.10.48 AM (1).jpeg" alt="Project 4" className="project-img" />
+          <div className="project-desc">
+            <h3>Project 9</h3>
+            <p>Description for project 6.</p>
+          </div>
+        </div>
+
+        
+
+
+
 
         {/* --- ADDITIONAL PROJECTS FROM BACKEND --- */}
         {dynamicProjects.map((project) => (

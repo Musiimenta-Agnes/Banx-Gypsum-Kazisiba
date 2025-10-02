@@ -49,7 +49,7 @@ const SideBar = () => {
           className="flex-column"
           style={{
             boxShadow: '0 3px 3px blue',
-            backgroundColor: 'rgba(25, 25, 87, 1)',
+            backgroundColor: '#1F3C88',
             zIndex: 1200,
             height: '100vh',
             position: 'fixed',
@@ -71,7 +71,7 @@ const SideBar = () => {
           >
             {/* Replace src with your logo path */}
             <img
-              src="/images/WhatsApp_Image_2025-06-11_at_4.19.09_PM-removebg-preview.png"
+              src="/images/Banx Logo.png"
               alt="Website Logo"
               style={{ maxHeight: '60px', maxWidth: '100%' }}
             />
@@ -120,50 +120,6 @@ const SideBar = () => {
             </NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link
-            as={Link}
-            to="/view-customers"
-            className={`nav-links text-white ${isActive('/view-customers') ? 'active-link' : ''}`}
-            onClick={handleLinkClick}
-          >
-            <FaUserFriends style={{ marginRight: '8px' }} /> Customers
-          </Nav.Link>
-
-          <Nav.Link
-            as={Link}
-            to="/view-all-orders"
-            className={`nav-links text-white ${isActive('/view-all-orders') ? 'active-link' : ''}`}
-            onClick={handleLinkClick}
-          >
-            <FaShoppingCart style={{ marginRight: '8px' }} /> Cart Orders
-          </Nav.Link>
-
-          <Nav.Link
-            as={Link}
-            to="/view-direct-orders"
-            className={`nav-links text-white ${isActive('/view-direct-orders') ? 'active-link' : ''}`}
-            onClick={handleLinkClick}
-          >
-            <FaClipboardList style={{ marginRight: '8px' }} /> Direct Orders
-          </Nav.Link>
-
-          <Nav.Link
-            as={Link}
-            to="/view-delivered-orders"
-            className={`nav-links text-white ${isActive('/view-delivered-orders') ? 'active-link' : ''}`}
-            onClick={handleLinkClick}
-          >
-            <FaClipboardList style={{ marginRight: '8px' }} /> Delivered Orders
-          </Nav.Link>
-
-          <Nav.Link
-            as={Link}
-            to="/admin-contact-editor"
-            className={`nav-links text-white ${isActive('/admin-contact-editor') ? 'active-link' : ''}`}
-            onClick={handleLinkClick}
-          >
-            <FaEdit style={{ marginRight: '8px' }} /> Contact
-          </Nav.Link>
 
           <Nav.Link
             as={Link}
@@ -172,15 +128,6 @@ const SideBar = () => {
             onClick={handleLinkClick}
           >
             <FaEdit style={{ marginRight: '8px' }} /> Questions
-          </Nav.Link>
-
-          <Nav.Link
-            as={Link}
-            to="/admin-about-editor"
-            className={`nav-links text-white ${isActive('/admin-about-editor') ? 'active-link' : ''}`}
-            onClick={handleLinkClick}
-          >
-            <FaEdit style={{ marginRight: '8px' }} /> About Page
           </Nav.Link>
 
           <NavDropdown
