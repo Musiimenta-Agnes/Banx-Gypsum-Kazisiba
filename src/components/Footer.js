@@ -26,7 +26,7 @@ function OurFooter() {
   
   <p style={{ color: 'white' }}>
     <i className="bi bi-envelope-fill me-2"></i>
-    Email: info@banxgypsum.com
+    Email: jimmleevespatrick846@gmail.com
   </p>
 
   

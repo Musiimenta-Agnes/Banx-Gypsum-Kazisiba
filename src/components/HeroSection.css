@@ -143,17 +143,6 @@
   }
 }
 
-/* @keyframes zoomInOut {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1); /* Zoom in slightly */
-  /* }
-  100% {
-    transform: scale(1);
-  }
-} */ 
 
 @keyframes fadeInUp {
   from {
@@ -192,13 +181,6 @@
   font-size: 50px;
   text-shadow: #1f3c88 0 0 3px, #1f3c88 0 0 3px;
 }
-
-
-
-
-
-
-
 
 
 .hero-container {

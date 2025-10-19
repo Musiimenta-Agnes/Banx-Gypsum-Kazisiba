@@ -34,7 +34,7 @@ function OurHeader() {
             style={{ backgroundColor: "#1F3C88" }}
           >
             <a className="navbar-brand banx" href="/">
-              <img src="/images/Banx Logo.png" alt="Banx" className="logo" />
+              <img src="/images/logo.png" alt="Banx" className="logo" />
             </a>
 
             <button
@@ -76,8 +76,40 @@ function OurHeader() {
                   </Link>
                 </li>
 
+
+                                <li className="custom-item nav-item">
+                  <Link
+                    to="/completed-projects"
+                    className="custom-link nav-link"
+                    onClick={handleLinkClick}
+                  >
+                    Completed
+                  </Link>
+                </li>
+
+                                <li className="custom-item nav-item">
+                  <Link
+                    to="/process"
+                    className="custom-link nav-link"
+                    onClick={handleLinkClick}
+                  >
+                    Ongoing
+                  </Link>
+                </li>
+
+
+                                <li className="custom-item nav-item">
+                  <Link
+                    to="/upcoming"
+                    className="custom-link nav-link"
+                    onClick={handleLinkClick}
+                  >
+                   Upcoming
+                  </Link>
+                </li>
+
                 {/* 🔽 Projects Dropdown */}
-                <li className="nav-item dropdown custom-item">
+                {/* <li className="nav-item dropdown custom-item">
                   <Link
                     to="#"
                     className="nav-link dropdown-toggle custom-link"
@@ -121,7 +153,7 @@ function OurHeader() {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
 
                 <li className="custom-item nav-item">
                   <Link

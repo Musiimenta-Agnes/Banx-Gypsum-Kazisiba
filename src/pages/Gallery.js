@@ -7,24 +7,24 @@ function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    { id: 1, src: "/images/modern-kitchen-interior-design.jpg", title: "Luxury Living Room" },
-    { id: 2, src: "/images/neon-robot-vacuum-cleaner (1).jpg", title: "Modern Kitchen Design" },
-    { id: 3, src: "/images/image five.jfif", title: "Office Interior" },
-    { id: 4, src: "/images/Image four.jfif", title: "Contemporary Bedroom" },
-    { id: 5, src: "/images/futuristic-kitchen-interior-design.jpg", title: "Classic Kitchen Area" },
-    { id: 6, src: "/images/Image three.jfif", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.25 AM (1).jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.27 AM.jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.26 AM.jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.27 AM.jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.48 AM (1).jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.48 AM.jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM (1).jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM.jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM (2).jpeg", title: "Stylish Outdoor Space" },
-    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.50 AM (1).jpeg", title: "Stylish Outdoor Space" },
-     { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.51 AM.jpeg", title: "Stylish Outdoor Space" },
-      { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.50 AM.jpeg", title: "Stylish Outdoor Space" }
+    { id: 1, src: "/images/modern-kitchen-interior-design.jpg", title: "" },
+    { id: 2, src: "/images/neon-robot-vacuum-cleaner (1).jpg", title: "" },
+    { id: 3, src: "/images/image five.jfif", title: "" },
+    { id: 4, src: "/images/Image four.jfif", title: "" },
+    { id: 5, src: "/images/futuristic-kitchen-interior-design.jpg", title: "" },
+    { id: 6, src: "/images/Image three.jfif", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.25 AM (1).jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.27 AM.jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.26 AM.jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.27 AM.jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.48 AM (1).jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.48 AM.jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM (1).jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM.jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.49 AM (2).jpeg", title: "" },
+    { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.50 AM (1).jpeg", title: "" },
+     { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.51 AM.jpeg", title: "" },
+      { id: 6, src: "/images/WhatsApp Image 2025-09-22 at 10.10.50 AM.jpeg", title: "" }
     //  You can fetch from backend here too later
   ];
 

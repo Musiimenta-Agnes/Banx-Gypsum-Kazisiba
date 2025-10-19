@@ -26,10 +26,10 @@ function Projects() {
 
                 <div className="project-card">
           <video className="project-video" controls>
-            <source src="/images/Video 2.mp4" type="video/mp4" />
+            <source src="/images/vid-6.mp4" type="video/mp4" />
           </video>
           <div className="project-desc">
-            <h3>Project Title 7</h3>
+            <h3>Project One</h3>
             <p>This is a short description of the project shown in the video.</p>
           </div>
         </div>
@@ -84,17 +84,7 @@ function Projects() {
             <p>Description for project 6.</p>
           </div>
         </div>
-
-        {/* <div className="project-card">
-          <video className="project-video" controls>
-            <source src="/images/Video 2.mp4" type="video/mp4" />
-          </video>
-          <div className="project-desc">
-            <h3>Project Title 7</h3>
-            <p>This is a short description of the project shown in the video.</p>
-          </div>
-        </div> */}
-
+        
         <div className="project-card">
           <img src="/images/futuristic-kitchen-interior-design.jpg" alt="Project 4" className="project-img" />
           <div className="project-desc">
