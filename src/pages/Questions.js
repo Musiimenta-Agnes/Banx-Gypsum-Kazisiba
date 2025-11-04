@@ -18,15 +18,16 @@ function FAQPage() {
     },
     {
       id: 2,
-      question: "How can I place an order?",
+      question: "Do you provide installation services or only materials?",
+
       answer:
-        "You can place an order directly on our website, visit our stores, or contact us via phone/WhatsApp.",
+        "We can buy material and also  do the Professional installation and ceiling finishing",
     },
     {
       id: 3,
-      question: "Do you deliver across Uganda?",
+      question: "Is gypsum ceiling durable?",
       answer:
-        "Yes, we deliver gypsum products and services across all regions of Uganda.",
+        "Yes. Gypsum ceilings do not crack, resist heat, and can last 10+ years if installed correctly and kept dry.",
     },
     {
       id: 4,
@@ -34,6 +35,13 @@ function FAQPage() {
       answer:
         "Absolutely! We specialize in custom ceiling and partition designs tailored to your needs.",
     },
+
+    {id: 5,
+      question: "Can gypsum ceilings be designed in different styles?",
+      answer:
+        "Yes. We create custom designs, including Plain flat ceilings, Modern layered ceilings, LED & strip lighting ceilings.",
+        
+    }
   ];
 
   return (

@@ -47,6 +47,7 @@ function OurFooter() {
             <ul className="ul-links">
               <li><Link to="/gallrey" className="footer-links">Gallery</Link></li> <br/>
               <li><Link to="/contact" className="footer-links">Contact Us</Link></li> <br/>
+                <li><Link to="/questions" className="footer-links">FAQuestions</Link></li> <br/>
     
             </ul>
           </div>

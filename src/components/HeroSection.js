@@ -86,60 +86,114 @@ export default function HeroSection() {
 
 
          <br/>
+            {/* <h1 className="heading" style={{textAlign:'center'}}>Sittingroom Designs</h1>
+
+            <div className="project-card">
+              <img src="/images/neon-robot-vacuum-cleaner (1).jpg" alt="image1" className="project-img" />
+            </div>
+
+            <div className="project-card">
+              <img src="/images/3d-rendering-white-wood-living-room-near-bedroom-upstair.jpg" alt="image1" className="project-img" />
+            </div>
+
+            <div className="project-card">
+              <img src="/images/5368ed508ceab9ffe36bae957ab479e8.jpg" alt="image1" className="project-img" />
+            </div>
+
+            <div className="project-card">
+              <img src="/images/2e91b21c0b335187608e88d27e3499c5.jpg" alt="image1" className="project-img" />
+            </div>
+ */}
+
 
         {/* <Projects/> */}
+        <h1 className="heading" style={{textAlign:'center'}}>Sittingroom Designs</h1>
 
-        <div style={{display:'flex', justifyContent:'center'}}>
+        <div style={{display:'flex', gap:'3rem', justifyContent:'center'}}>
           <div className="project-card">
             <img src="/images/neon-robot-vacuum-cleaner (1).jpg" alt="image1"  className="project-img"/>
           </div>
-
+<br/>
          <div className="project-card">
             <img src="/images/3d-rendering-white-wood-living-room-near-bedroom-upstair.jpg" alt="image1"  className="project-img"/>
           </div>
         </div>
 
 
-
+<br/>
         <div style={{display:'flex', justifyContent:'center'}}>
           <div className="project-card">
-            <img src="/images/3d-room-interior-with-classic-design-furniture.jpg" alt="image1"  className="project-img"/>
+            <img src="/images/0c70f62259e753379958cb940e89e1e2.jpg" alt="image1"  className="project-img"/>
           </div>
 
+<br/>
          <div className="project-card">
-            <img src="/images/3d-rendering-classic-interior.jpg" alt="image1"  className="project-img"/>
+            <img src="/images/5368ed508ceab9ffe36bae957ab479e8.jpg" alt="image1"  className="project-img"/>
           </div>
         </div>
 
+<br/>
         <div style={{display:'flex', justifyContent:'center'}}>
           <div className="project-card">
             <img src="/images/3d-rendering-modern-dining-room-living-room-with-luxury-decor.jpg" alt="image1"  className="project-img"/>
           </div>
 
+<br/>
+         <div className="project-card">
+            <img src="/images/videoframe_4594.png" alt="image1"  className="project-img"/>
+          </div>
+        </div>
+
+
+<br/> <br/>
+
+
+        {/* <Projects/> */}
+        <h1 className="heading" style={{textAlign:'center'}}>Bedroom Designs</h1>
+
+        <div style={{display:'flex', gap:'3rem', justifyContent:'center'}}>
+          <div className="project-card">
+            <img src="/images/bed1.jpg" alt="image1"  className="project-img"/>
+          </div>
+<br/>
+         <div className="project-card">
+            <img src="/images/bed2.jpg" alt="image1"  className="project-img"/>
+          </div>
+        </div>
+
+
+<br/>
+        <div style={{display:'flex', justifyContent:'center'}}>
+          <div className="project-card">
+            <img src="/images/siting2.jpg" alt="image1"  className="project-img"/>
+          </div>
+
+<br/>
          <div className="project-card">
             <img src="/images/3d-rendering-classic-interior.jpg" alt="image1"  className="project-img"/>
           </div>
         </div>
 
-
+<br/>
         <div style={{display:'flex', justifyContent:'center'}}>
-          <div className="">
-            <br/>
-            <h1 style={{textAlign:'center', color:'rgb(12, 67, 134)'}}>Our Mission</h1>
-            <p style={{width:'100%'}}>Our mission at Banx Gypsum Kazisiba is to transform spaces through innovative, 
-              high-quality gypsum and interior design solutions. We are committed to delivering
-               exceptional craftsmanship, durable finishes, and elegant designs that enhance the beauty, 
-               comfort, and functionality of every environment we work on.
-               Guided by professionalism, integrity, and customer satisfaction, we strive to set 
-               new standards in the construction and finishing industry—turning our clients’ visions into lasting realities.</p>
+          <div className="project-card">
+            <img src="/images/bed3.jpg" alt="image1"  className="project-img"/>
+          </div>
+
+<br/>
+         <div className="project-card">
+            <img src="/images/bed4.jpg" alt="image1"  className="project-img"/>
           </div>
         </div>
+
 
 
        <div style={{display:'flex', justifyContent:'center'}}>
         <button className="button"><Link className="button" to="/completed-projects">Explore more designs</Link></button>
 
        </div>
+
+
 
        <br/> <br/>
     </div>

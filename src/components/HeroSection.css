@@ -251,3 +251,23 @@
   text-align: center;
   text-decoration: none;
 }
+
+
+
+
+
+
+
+
+.project-card {
+  width: 90%;            /* Occupies 90% of page */
+  margin: 0 auto 20px;   /* Centers the card and adds space below */
+  /* display: flex; */
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;            /* Take full width of its container */
+  border-radius: 8px;     /* Optional nice edges */
+  display: block;
+}

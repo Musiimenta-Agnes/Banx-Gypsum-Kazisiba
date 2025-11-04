@@ -63,3 +63,65 @@
   font-size: 40px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.project-card {
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;          /* Centers text under image */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: transform .3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image & Video Full Width */
+.project-img,
+.project-video {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+/* Description Area Under Image */
+.project-desc {
+  padding: 15px 12px;
+}
+
+.project-desc h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.project-desc p {
+  font-size: 14px;
+  color: #555;
+}

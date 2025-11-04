@@ -5,7 +5,6 @@ import { Nav, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import {
   FaHome, FaBoxOpen, FaUsers, FaUser, FaEdit,
-  FaShoppingCart, FaUserFriends, FaClipboardList
 } from 'react-icons/fa';
 import './SideBar.css';
 

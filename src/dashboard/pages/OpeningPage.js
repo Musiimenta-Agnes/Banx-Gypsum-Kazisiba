@@ -1,8 +1,6 @@
 
 
 import React from 'react';
-import axios from 'axios';
-import AOS from 'aos';
 import '../dashStyles/OpeningPage.css';
 
 
