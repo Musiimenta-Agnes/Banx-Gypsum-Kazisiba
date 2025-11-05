@@ -28,7 +28,7 @@ function AboutUs() {
       {/* Row 1 */}
       <div className="about-row">
           <div className="project-card">
-            <img src="/images/3d-rendering-white-wood-living-room-near-bedroom-upstair.jpg" alt="image1"  className="project-img"/>
+            <img src="/images/siting2.jpg" alt="image1"  className="project-img"/>
           </div>
         <div className="about-text" data-aos="fade-up">
           <h2>Professional Gypsum Services</h2>

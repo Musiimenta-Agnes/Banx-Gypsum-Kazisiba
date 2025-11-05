@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import AboutUs from "../pages/About.js"
+import FAQPage from "../pages/Questions.js"
+import ContactUs from "../pages/Contact.js";
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -196,6 +200,18 @@ export default function HeroSection() {
 
 
        <br/> <br/>
+
+       <AboutUs/>
+
+              <br/> <br/>
+
+       <FAQPage/>
+
+      <br/> <br/>
+
+      <h3 style={{textAlign:'center',color:'rgb(12, 67, 134)'}}>Reach out to us via this contact information</h3>
+
+       <ContactUs/>
     </div>
   );
 }

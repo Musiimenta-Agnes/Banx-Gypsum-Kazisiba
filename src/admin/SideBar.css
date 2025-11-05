@@ -1,0 +1,124 @@
+/* Top navigation container */
+.topnav-container {
+  width: 100%;
+  background-color: #1F3C88;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.topnav-logo {
+   width: 60px;
+   height: 60px;
+
+   clip-path: circle(50% at 50% 50%); 
+   object-fit: cover ; padding-bottom: 0px; 
+
+}
+
+.topnav-logo img {
+  height: 60px;
+  max-width: 100%;
+}
+
+/* Mobile toggle button */
+.topnav-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Links container */
+.topnav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.topnav-links a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 10px;
+  transition: background 0.3s ease;
+  border-radius: 8px;
+}
+
+.topnav-links a:hover,
+.topnav-links a.active-link {
+  background-color: orange;
+  color: white;
+}
+
+/* Mobile menu */
+.topnav-links.closed {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topnav-links.open {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1F3C88;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .topnav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Keep all your existing CSS above */
+
+/* Adjust topnav container for spacing on mobile */
+@media (max-width: 768px) {
+  .topnav-container {
+    justify-content: space-between; /* logo left, toggle right */
+    padding: 0 15px;
+  }
+
+  .topnav-toggle {
+    display: block;
+    position: relative; /* stays at right side automatically with flex */
+  }
+
+  /* Ensure links are hidden by default on mobile */
+  .topnav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topnav-links.open {
+    display: flex; /* show menu when toggle clicked */
+    background-color: #1F3C88;
+    position: absolute;
+    top: 60px; /* below nav */
+    left: 0;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+}
