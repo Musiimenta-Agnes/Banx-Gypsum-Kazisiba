@@ -210,7 +210,7 @@
 .dark-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* adjust darkness */
+  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
   z-index: 1;
 }
 

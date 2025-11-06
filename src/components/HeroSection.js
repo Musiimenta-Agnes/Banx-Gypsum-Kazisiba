@@ -23,11 +23,11 @@ import './Header.css';
 
 const images = [
   // "/images/neon-robot-vacuum-cleaner (1).jpg",
-  "/images/3d-rendering-classic-interior.jpg",
-   "/images/neon-robot-vacuum-cleaner.jpg",
-   "/images/3d-rendering-white-wood-living-room-near-bedroom-upstair.jpg",
-   "/images/hallway-modern-style.jpg",
-   "/images/sitting.jpeg"
+  "/images/luxury.jpg",
+   "/images/siting2.jpg",
+   "/images/sitting1.jpg",
+   "/images/kitchen.jpeg",
+   "/images/0c70f62259e753379958cb940e89e1e2.jpg"
 
 ]; 
 

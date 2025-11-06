@@ -100,64 +100,18 @@ function OurHeader() {
 
                                 <li className="custom-item nav-item">
                   <Link
-                    to="/upcoming"
+                    to="/materials"
                     className="custom-link nav-link"
                     onClick={handleLinkClick}
                   >
-                   Upcoming
+                   Materials Used
                   </Link>
                 </li>
 
-                {/* 🔽 Projects Dropdown */}
-                {/* <li className="nav-item dropdown custom-item">
-                  <Link
-                    to="#"
-                    className="nav-link dropdown-toggle custom-link"
-                    id="projectsDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Our Projects
-                  </Link>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="projectsDropdown"
-                    style={{ backgroundColor: "#1F3C88" }}
-                  >
-                    <li>
-                      <Link
-                        to="/completed-projects"
-                        className="dropdown-item text-white"
-                        onClick={handleLinkClick}
-                      >
-                        Completed Projects
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/process"
-                        className="dropdown-item text-white"
-                        onClick={handleLinkClick}
-                      >
-                        Projects in process
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/upcoming"
-                        className="dropdown-item text-white"
-                        onClick={handleLinkClick}
-                      >
-                         Upcoming projects
-                      </Link>
-                    </li>
-                  </ul>
-                </li> */}
-
+               
                 <li className="custom-item nav-item">
                   <Link
-                    to="/gallrey"
+                    to="/gallery"
                     className="custom-link nav-link"
                     onClick={handleLinkClick}
                   >

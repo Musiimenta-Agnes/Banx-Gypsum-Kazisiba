@@ -45,7 +45,7 @@ function OurFooter() {
           <div className="col">
             <h5 style={{ padding: '6px', color: 'Orange' }}><b>Quick links</b></h5>
             <ul className="ul-links">
-              <li><Link to="/gallrey" className="footer-links">Gallery</Link></li> <br/>
+              <li><Link to="/gallery" className="footer-links">Gallery</Link></li> <br/>
               <li><Link to="/contact" className="footer-links">Contact Us</Link></li> <br/>
                 <li><Link to="/questions" className="footer-links">FAQuestions</Link></li> <br/>
     
@@ -56,6 +56,7 @@ function OurFooter() {
             <h5 style={{ padding: '6px', color: 'Orange' }}><b>Business Hours</b></h5>
             <p style={{ color: 'white' }}>Monday - Saturday</p>
             <p style={{ color: 'white' }}>8:00am - 6:00pm</p>
+              <li style={{listStyle:'none'}}><Link to="/materials" className="footer-links">Materials</Link></li> <br/>
             <ul className="ul-links">
 
             </ul>

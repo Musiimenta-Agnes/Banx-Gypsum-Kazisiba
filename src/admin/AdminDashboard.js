@@ -124,7 +124,7 @@ const AdminDashboard = () => {
       {/* New Section under cards */}
       <div className="dashboard-info-section">
         <div className="dashboard-info-image">
-          <img src="/images/luxury.jpg" alt="Info" />
+          <img src="/images/jim.jpeg" alt="Info" />
         </div>
 
  <div className="dashboard-info-text">
