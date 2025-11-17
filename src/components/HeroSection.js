@@ -90,38 +90,25 @@ export default function HeroSection() {
 
 
          <br/>
-            {/* <h1 className="heading" style={{textAlign:'center'}}>Sittingroom Designs</h1>
-
-            <div className="project-card">
-              <img src="/images/neon-robot-vacuum-cleaner (1).jpg" alt="image1" className="project-img" />
-            </div>
-
-            <div className="project-card">
-              <img src="/images/3d-rendering-white-wood-living-room-near-bedroom-upstair.jpg" alt="image1" className="project-img" />
-            </div>
-
-            <div className="project-card">
-              <img src="/images/5368ed508ceab9ffe36bae957ab479e8.jpg" alt="image1" className="project-img" />
-            </div>
-
-            <div className="project-card">
-              <img src="/images/2e91b21c0b335187608e88d27e3499c5.jpg" alt="image1" className="project-img" />
-            </div>
- */}
-
 
         {/* <Projects/> */}
         <h1 className="heading" style={{textAlign:'center'}}>Sittingroom Designs</h1>
 
-        <div style={{display:'flex', gap:'3rem', justifyContent:'center'}}>
+
+<br/>
+        <div style={{display:'flex', justifyContent:'center'}}>
           <div className="project-card">
             <img src="/images/neon-robot-vacuum-cleaner (1).jpg" alt="image1"  className="project-img"/>
           </div>
+
 <br/>
          <div className="project-card">
             <img src="/images/3d-rendering-white-wood-living-room-near-bedroom-upstair.jpg" alt="image1"  className="project-img"/>
           </div>
         </div>
+
+<br/>
+
 
 
 <br/>
@@ -137,6 +124,15 @@ export default function HeroSection() {
         </div>
 
 <br/>
+
+
+
+
+
+
+
+
+
         <div style={{display:'flex', justifyContent:'center'}}>
           <div className="project-card">
             <img src="/images/3d-rendering-modern-dining-room-living-room-with-luxury-decor.jpg" alt="image1"  className="project-img"/>
@@ -155,15 +151,23 @@ export default function HeroSection() {
         {/* <Projects/> */}
         <h1 className="heading" style={{textAlign:'center'}}>Bedroom Designs</h1>
 
-        <div style={{display:'flex', gap:'3rem', justifyContent:'center'}}>
+
+
+
+<br/>
+        <div style={{display:'flex', justifyContent:'center'}}>
           <div className="project-card">
             <img src="/images/bed1.jpg" alt="image1"  className="project-img"/>
           </div>
+
 <br/>
          <div className="project-card">
             <img src="/images/bed2.jpg" alt="image1"  className="project-img"/>
           </div>
         </div>
+
+<br/>
+
 
 
 <br/>
@@ -179,6 +183,10 @@ export default function HeroSection() {
         </div>
 
 <br/>
+
+
+
+
         <div style={{display:'flex', justifyContent:'center'}}>
           <div className="project-card">
             <img src="/images/bed3.jpg" alt="image1"  className="project-img"/>
@@ -203,7 +211,7 @@ export default function HeroSection() {
 
        <AboutUs/>
 
-              <br/> <br/>
+           
 
        <FAQPage/>
 

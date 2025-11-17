@@ -30,7 +30,7 @@ function ContactUs() {
     <div className="container my-5">
       <div className="row mb-4">
         {/* Contact Card */}
-        <div className="col-12" data-aos="fade-right">
+        <div className="col-12" data-aos="fade-up">
           <div
             className="card shadow mb-4 d-flex justify-content-center align-items-center"
             style={{
@@ -78,7 +78,7 @@ function ContactUs() {
 
       {/* Google Map */}
       <div className="row">
-        <div className="col-12" data-aos="fade-left">
+        <div className="col-12" data-aos="fade-up">
           <h4 className="text-center mb-3" style={{ fontWeight: 'bold' }}>Our Location</h4>
           <div style={{ border: '2px solid #ccc', borderRadius: '15px', overflow: 'hidden', height: '360px', width:'100%', margin:'auto' }}>
             <iframe

@@ -14,6 +14,7 @@ const WhatsAppButton = () => {
     window.open(link, '_blank');
   };
 
+  
   return (
     <div className="whatsapp-float" onClick={handleClick} title="Chat with us on WhatsApp">
       <i className="bi bi-whatsapp"></i>

@@ -8,17 +8,19 @@ const UploadManager = () => {
   const [page, setPage] = useState("gallery");
   const [section, setSection] = useState("");
 
+  // Define sections for pages, but materials has no subsections
   const sectionsByPage = {
     gallery: [],
     projects: [],
     homepage: [],
-    materials: ["gypsum", "ceiling", "wall panels"], // sections optional
+    materials: [], // <-- no subsections
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!file || !title || (sectionsByPage[page].length && !section && page !== "materials")) {
+    // Only require section if page has subsections
+    if (!file || !title || (sectionsByPage[page].length > 0 && !section)) {
       alert("Please fill all required fields and select a file/section if required.");
       return;
     }
@@ -55,7 +57,7 @@ const UploadManager = () => {
   return (
     <div className="upload-page fade-in">
       <h2 className="upload-title">Upload Media</h2>
-      <p className="upload-subtext">Upload images or videos to add to the website.</p>
+      <p className="upload-subtext">Upload images or videos to the website.</p>
 
       <form className="upload-form slide-up" onSubmit={handleSubmit}>
         <div className="form-group">
@@ -89,13 +91,14 @@ const UploadManager = () => {
             <option value="gallery">Gallery</option>
             <option value="projects">Projects</option>
             <option value="materials">Materials</option>
-            <option value="homepage">Home Page</option>
+          
           </select>
         </div>
 
+        {/* Only show section selector if the page has sections */}
         {sectionsByPage[page].length > 0 && (
           <div className="form-group">
-            <label>Choose Section (Optional)</label>
+            <label>Choose Section</label>
             <select value={section} onChange={(e) => setSection(e.target.value)}>
               <option value="">-- None --</option>
               {sectionsByPage[page].map((sec) => (
@@ -130,9 +133,6 @@ export default UploadManager;
 
 
 
-
-
-
 // import React, { useState } from "react";
 // import "./Styles.css";
 
@@ -146,13 +146,13 @@ export default UploadManager;
 //     gallery: [],
 //     projects: [],
 //     homepage: [],
-//     materials: ["gypsum", "ceiling", "wall panels"],
+//     materials: ["gypsum", "ceiling", "wall panels"], // sections optional
 //   };
 
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 
-//     if (!file || !title || (sectionsByPage[page].length && !section)) {
+//     if (!file || !title || (sectionsByPage[page].length && !section && page !== "materials")) {
 //       alert("Please fill all required fields and select a file/section if required.");
 //       return;
 //     }
@@ -170,6 +170,7 @@ export default UploadManager;
 //       });
 
 //       const data = await res.json();
+
 //       if (res.ok) {
 //         alert("File uploaded successfully!");
 //         setFile(null);
@@ -193,42 +194,66 @@ export default UploadManager;
 //       <form className="upload-form slide-up" onSubmit={handleSubmit}>
 //         <div className="form-group">
 //           <label>Select File</label>
-//           <input type="file" accept="image/*,video/*" onChange={(e) => setFile(e.target.files[0])} />
+//           <input
+//             type="file"
+//             accept="image/*,video/*"
+//             onChange={(e) => setFile(e.target.files[0])}
+//           />
 //         </div>
 
 //         <div className="form-group">
 //           <label>Title</label>
-//           <input type="text" placeholder="Enter title" value={title} onChange={(e) => setTitle(e.target.value)} />
+//           <input
+//             type="text"
+//             placeholder="Enter title"
+//             value={title}
+//             onChange={(e) => setTitle(e.target.value)}
+//           />
 //         </div>
 
-
-//        <div className="form-group">
+//         <div className="form-group">
 //           <label>Choose Page</label>
-//           <select value={page} onChange={(e) => { setPage(e.target.value); setSection(""); }}>
+//           <select
+//             value={page}
+//             onChange={(e) => {
+//               setPage(e.target.value);
+//               setSection("");
+//             }}
+//           >
 //             <option value="gallery">Gallery</option>
 //             <option value="projects">Projects</option>
-//             {/* <option value="homepage">Home Page</option> */}
-//             {/* <option value="materials">Materials</option> */}
+//             <option value="materials">Materials</option>
+//             <option value="homepage">Home Page</option>
 //           </select>
-//         </div> 
+//         </div>
 
 //         {sectionsByPage[page].length > 0 && (
 //           <div className="form-group">
-//             <label>Choose Section</label>
+//             <label>Choose Section (Optional)</label>
 //             <select value={section} onChange={(e) => setSection(e.target.value)}>
-//               <option value="">-- Select Section --</option>
+//               <option value="">-- None --</option>
 //               {sectionsByPage[page].map((sec) => (
-//                 <option key={sec} value={sec}>{sec.charAt(0).toUpperCase() + sec.slice(1)}</option>
+//                 <option key={sec} value={sec}>
+//                   {sec.charAt(0).toUpperCase() + sec.slice(1)}
+//                 </option>
 //               ))}
 //             </select>
 //           </div>
 //         )}
 
-//         <button type="submit" className="btn-upload glow-button">Upload</button>
+//         <button type="submit" className="btn-upload glow-button">
+//           Upload
+//         </button>
 //       </form>
 //     </div>
 //   );
 // };
 
 // export default UploadManager;
+
+
+
+
+
+
 
