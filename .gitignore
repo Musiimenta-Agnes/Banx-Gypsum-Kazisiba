@@ -1,6 +1,6 @@
 build.zip/
 node_modules/
-public/images/
+# public/images/
 build/
 *.log
 .env
